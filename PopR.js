@@ -28,6 +28,7 @@ searchButton.addEventListener('click', () => {
             const response = await fetch(url);
             const result = await response.text();
             console.log(result);
+            return results;
         } catch (error) {
             console.error(error);
             return "error at API call";
