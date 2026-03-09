@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopR program</title>
+    <link rel="stylesheet" href="/portfolio-QA/program/style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="h1" aria-label="program name">Popularity Ranking Program</h1><button class="refreshButton" id="refreshButton">⟳</button>
+        <p class="paragraph" aria-label="Portoflio program"> Portoflio related program, for pedagogic use only</p>
+    </header>
+
+
+    <section class="searchSection" aria-label="search Section">
+        <h2 class="h2" aria-label="Search invitation"> Who are you looking for ? </h2>
+        <input class="nameSearch" id="nameSearch" type=text aria-label="imput name"> 
+        <button class="searchButton" id="searchButton" aria-label="lunch research">Research</button>
+        <div id="answerScore" class="answerScore"></div>
+        <button class="searchButton" id="saveButton" aria-label="save button">Save results</button>
+    </section>
+
+
+    <section class="resultList" aria-label="result List">
+        <h2 class="h2" aria-label="historic">Historic</h2>
+        <table class="historicTable" id="historicTable" aria-label="Historic Table">
+            <thead class="infoTable">
+                <tr>
+                    <th> Generated ID </th>
+                    <th> Research date </th>
+                    <th> Score </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="historicBody" id="historicBody"> </tbody>
+            <tfoot class="infoTable">
+                <tr>
+                    <th> Generated ID </th>
+                    <th> Research date </th>
+                    <th> Score </th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+
+
+    <footer class="footer">
+    <p>© 2026 Discolab - Developed by Gabriel</p>
+    <a href="#" id="policyLink">Usage Policy & Privacy</a>
+    </footer>
+    <script src="/portfolio-QA/program/PopR.js"></script>
+</body>
+
+</html>
